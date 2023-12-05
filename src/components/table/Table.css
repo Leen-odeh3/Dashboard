@@ -1,0 +1,48 @@
+.project {
+  margin-top: 50px;
+  display: flex;
+}
+.project .user {
+  flex: 2;
+}
+.project .table {
+  flex: 4;
+  margin-left: 30px;
+}
+.userBox .cardBox {
+  padding: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid rgb(89, 89, 89);
+  border-radius: 0;
+  color: #fff;
+}
+.light .userBox .cardBox {
+  color: #000;
+  border-bottom: 1px solid rgb(193, 193, 193);
+}
+.userBox .cardBox:nth-child(1) {
+  margin-top: 30px;
+}
+.userBox .cardBox:nth-last-child(1) {
+  border-bottom: none;
+}
+.userBox p,
+.userBox span {
+  opacity: 0.5;
+}
+.tableBox {
+  margin-top: 20px;
+}
+.light .tableContainer {
+  background-color: #fff !important;
+}
+@media only screen and (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project .table {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}

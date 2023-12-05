@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react"
+import "./App.css"
+import Footer from "./components/footer/Footer"
+import Header from "./components/header/Header"
+import Home from "./components/home/Home"
 
 function App() {
+  const getMode = () => {
+    return JSON.parse(localStorage.getItem("mode"))
+  }
+  const [dark, setMode] = useState(getMode())
+  useEffect(() => {
+    localStorage.setItem("mode", JSON.stringify(dark))
+  }, [dark])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className={dark ? "app" : "light"}>
+        <Header dark={dark} setMode={setMode} />
+        <Home />
+        <Footer />
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App

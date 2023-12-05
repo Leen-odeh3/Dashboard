@@ -1,0 +1,35 @@
+.users {
+  margin-top: 50px;
+}
+.users .imageCircle {
+  width: 80px;
+  height: 80px;
+}
+.users h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #f7f7f7;
+}
+.users p {
+  font-size: 15px;
+  margin-bottom: 15px;
+  opacity: 0.5;
+  color: #fff;
+}
+.light .users h3,
+.light .users p {
+  color: #000;
+}
+.users span {
+  font-weight: 600;
+  color: #ebc751;
+}
+.users .cardBox:nth-child(2) span {
+  color: grey;
+}
+.users .cardBox:nth-child(3) span {
+  color: #13c369;
+}
+.users .cardBox:nth-child(4) span {
+  color: #34b7df;
+}

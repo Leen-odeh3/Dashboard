@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #282e38;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 85%;
+  margin: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flexSB {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+.imageCircle {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+button,
+input {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style-type: none;
+}
+.heading {
+  padding: 20px 0;
+}
+.heading h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f7f7f7;
+}
+.heading span {
+  word-spacing: 10px;
+  color: #f7f7f7;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.cardBox {
+  background-color: #313844;
+  border-radius: 5px;
+  padding: 20px;
+}
+.cardHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #dee2e6;
+}
+.cardHeading h3 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.row {
+  width: 50%;
+}
+.batch {
+  background: #10c469;
+  width: 65px;
+  border-radius: 50px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 5px;
+}
+.batch1 {
+  background: #ff8acc;
+}
+.progress {
+  background-color: #2a544b;
+  border-radius: 20px;
+  position: relative;
+  margin: 45px 0 0 0;
+  height: 7px;
+  width: 90%;
+}
+.progress-done {
+  background-color: #38d16a;
+  border-radius: 20px;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+/*-------------light-mode---------------------*/
+.light {
+  background-color: #ebeff2;
+}
+.light .cardBox {
+  background-color: #fff;
+  box-shadow: 0 0.75rem 6rem rgba(56, 65, 74, 0.03);
+}
+.light .heading span,
+.light .heading h3,
+.light .cardHeading {
+  color: #000;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*-------------light-mode---------------------*/
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+  .grid2 {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

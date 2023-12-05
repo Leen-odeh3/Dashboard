@@ -1,0 +1,17 @@
+footer {
+  background-color: #313844;
+  padding: 20px 0;
+  margin-top: 30px;
+  color: #fff;
+}
+footer span {
+  color: green;
+  opacity: 1;
+}
+footer li {
+  margin-left: 30px;
+}
+.light footer {
+  background-color: #fff;
+  color: #000;
+}

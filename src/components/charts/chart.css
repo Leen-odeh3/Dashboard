@@ -1,0 +1,9 @@
+.charts {
+  margin-top: 40px;
+}
+.apexcharts-toolbar {
+  display: none !important;
+}
+.apexcharts-legend {
+  margin-top: 50px !important;
+}
