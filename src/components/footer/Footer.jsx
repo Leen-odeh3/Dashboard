@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='container flexSB'>
           <div className='legal'>
             <p>
-              2022 © Adminto theme by <span>GorkCoder</span>
+              2024 © Adminto theme by <span>Leen Odeh</span>
             </p>
           </div>
           <div className='links flexSB'>
